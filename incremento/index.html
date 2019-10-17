@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>incremento de alquiler</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <form>
+          <div class="form-group">
+            <div class="row">
+              <div class="col">
+                <label for="value">Valor Alquiler</label>
+                <input
+                  type="value"
+                  class="form-control"
+                  id="value"
+                  aria-describedby="value"
+                  placeholder="18000"
+                  value="18000"
+                />
+              </div>
+              <div class="col">
+                <label for="percentage">Incremento semestral</label>
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="percentage"
+                    placeholder="15"
+                    aria-label="Incremento semestral"
+                    aria-describedby="basic-addon2"
+                    value="15"
+                  />
+                  <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2">%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <ul class="list-group list-group-horizontal-xl">
+          <li class="list-group-item">Primer Semestre</li>
+          <li class="list-group-item first"></li>
+        </ul>
+      </div>
+      <div class="row">
+        <ul class="list-group list-group-horizontal-xl">
+          <li class="list-group-item">Segundo Semestre</li>
+          <li class="list-group-item second"></li>
+        </ul>
+      </div>
+      <div class="row">
+        <ul class="list-group list-group-horizontal-xl">
+          <li class="list-group-item">Tercer Semestre</li>
+          <li class="list-group-item third"></li>
+        </ul>
+      </div>
+      <div class="row">
+        <ul class="list-group list-group-horizontal-xl">
+          <li class="list-group-item">Cuarto Semestre</li>
+          <li class="list-group-item fourth"></li>
+        </ul>
+      </div>
+    </div>
+    <h2>Llave</h2>
+    <table class="table table-hover table-dark">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Item</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col">Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Depocito</td>
+          <td width="400">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control deposit-months"
+                id="DepositMonths"
+                placeholder="2"
+                aria-label="Incremento semestral"
+                aria-describedby="basic-addon2"
+                value="1"
+              />
+              <div class="input-group-append">
+                <span class="input-group-text">meses</span>
+                <span class="input-group-text fourth"></span>
+              </div>
+            </div>
+          </td>
+          <td class="total-deposit"></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Comicion</td>
+          <td></td>
+          <td class="total-commission"></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Sellos</td>
+          <td>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control deposit-months"
+                id="DepositMonths"
+                placeholder="2"
+                aria-label="Incremento semestral"
+                aria-describedby="basic-addon2"
+                value="3000"
+              />
+            </div>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Total</td>
+          <td class="Total">200 $</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Valor Total de Contrato</td>
+          <td class="total-contract">200 $</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="./index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
