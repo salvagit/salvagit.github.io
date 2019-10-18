@@ -17,7 +17,6 @@ const updateValues = () => {
   document.getElementsByClassName("second")[0].innerHTML = `${second} $`;
   document.getElementsByClassName("third")[0].innerHTML = `${thrid} $`;
   document.getElementsByClassName("fourth")[0].innerHTML = `${fourth} $`;
-  document.getElementsByClassName("fourth")[1].innerHTML = `${fourth} $`;
 
   const totalDepo = depoMonths.value * fourth;
   const totalContract = 6 * first + 6 * second + 6 * thrid + 6 * fourth;
