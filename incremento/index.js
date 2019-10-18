@@ -1,6 +1,11 @@
 const value = document.getElementById("value");
 const percentage = document.getElementById("percentage");
-const commissionPercentage = 415;
+const depoMonths = document.getElementById("DepositMonths");
+const stampCost = document.getElementById("StampCost");
+
+const commissionPercentage = 4.15;
+
+const round = num => Math.round(num * 100) / 100;
 
 const updateValues = () => {
   const first = Number(value.value);
@@ -14,10 +19,12 @@ const updateValues = () => {
   document.getElementsByClassName("fourth")[0].innerHTML = `${fourth} $`;
   document.getElementsByClassName("fourth")[1].innerHTML = `${fourth} $`;
 
-  const depoMonths = document.getElementById("DepositMonths").value;
-
-  const totalDepo = depoMonths * fourth;
+  const totalDepo = depoMonths.value * fourth;
   const totalContract = 6 * first + 6 * second + 6 * thrid + 6 * fourth;
+  const totalCommission =
+    Math.round(totalContract * commissionPercentage) / 100;
+
+  const total = totalDepo + totalCommission + Number(stampCost.value);
 
   document.getElementsByClassName(
     "total-deposit"
@@ -25,7 +32,10 @@ const updateValues = () => {
 
   document.getElementsByClassName(
     "total-commission"
-  )[0].innerHTML = `${totalContract * (commissionPercentage / 100)} $`;
+  )[0].innerHTML = `${totalCommission} $`;
+
+  document.getElementsByClassName("total")[0].innerHTML = `${round(total)} $`;
+
   document.getElementsByClassName(
     "total-contract"
   )[0].innerHTML = `${totalContract} $`;
@@ -33,5 +43,7 @@ const updateValues = () => {
 
 value.addEventListener("keyup", updateValues);
 percentage.addEventListener("keyup", updateValues);
+depoMonths.addEventListener("keyup", updateValues);
+stampCost.addEventListener("keyup", updateValues);
 
 updateValues();
