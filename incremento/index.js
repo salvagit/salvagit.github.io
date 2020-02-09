@@ -1,12 +1,10 @@
-// Constants
-const commissionPercentage = 4.15;
-
 // Selectors
 const value = document.getElementById("value");
 const percentage = document.getElementById("percentage");
 const depoMonths = document.getElementById("DepositMonths");
 const stampCost = document.getElementById("StampCost");
 const payCommission = document.getElementById("payCommission");
+const CommissionPercentage = document.getElementById("CommissionPercentage");
 
 // Helpers
 const round = num => Math.round(num * 100) / 100;
@@ -27,6 +25,7 @@ const updateValues = () => {
   const totalDepo = depoMonths.value * fourth;
   const totalContract = 6 * first + 6 * second + 6 * third + 6 * fourth;
   let totalCommission = 0;
+  const commissionPercentage = CommissionPercentage.value;
 
   if (payCommission.checked) {
     totalCommission = Math.round(totalContract * commissionPercentage) / 100;
@@ -53,6 +52,7 @@ value.addEventListener("keyup", updateValues);
 percentage.addEventListener("keyup", updateValues);
 depoMonths.addEventListener("keyup", updateValues);
 stampCost.addEventListener("keyup", updateValues);
+stampCost.addEventListener("keyup", CommissionPercentage);
 
 payCommission.addEventListener("change", updateValues);
 

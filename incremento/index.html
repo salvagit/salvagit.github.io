@@ -30,7 +30,7 @@
             />
           </div>
           <div class="col">
-            <label for="percentage"><h6>Incremento semestral</h6></label>
+            <label for="percentage"><h6>Incremento</h6></label>
             <div class="input-group mb-3">
               <input
                 type="number"
@@ -109,19 +109,29 @@
             <td class="first"></td>
           </tr>
           <tr>
-            <td>Comicion</td>
             <td>
-              <div class="col-auto">
-                <div class="form-check mb-2">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="payCommission"
-                  />
-                  <label class="form-check-label" for="autoSizingCheck">
-                    paga comicion (4.15)
-                  </label>
-                </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="payCommission"
+                />
+                <label class="form-check-label" for="autoSizingCheck">
+                  Comicion
+                </label>
+              </div>
+            </td>
+            <td>
+              <div class="input-group col-12">
+                <input
+                  type="number"
+                  class="form-control deposit-months"
+                  id="CommissionPercentage"
+                  placeholder="2"
+                  aria-label=""
+                  value="4.15"
+                  min="0"
+                />
               </div>
             </td>
             <td class="total-commission"></td>
