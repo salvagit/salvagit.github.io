@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Jazz Web</title>
+
+  <script src="https://kit.fontawesome.com/1f7d91b7bf.js" crossorigin="anonymous"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600&display=swap');
+  </style>
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container row">
+      <h1 style="margin: 0;">Jazz Web</h1>
+  
+      <nav>
+        <ul class="header__nav">
+          <li><a href="#home">home</a></li>
+          <li><a href="#formatos">formatos</a></li>
+          <li><a href="#fotos">fotos</a></li>
+          <li><a href="#contact">contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+  
+  <section class="home" id="home"></section>
+
+  <section class="formatos" id="formatos">
+    <div class="container">
+      <h2>Formatos</h2>
+  
+      <img class="formatos-images" src="https://imagenes.elpais.com/resizer/k38aKYlRylWCzbfzXJ784MbnH0U=/980x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/TSZTMYBZVGEQY5VYIA3EOXPXQM.jpg" alt="" srcset="">
+      
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum iusto placeat nostrum delectus doloremque alias eligendi, quis accusamus sequi obcaecati ut enim ratione quibusdam laudantium accusantium dolores aspernatur error similique?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum iusto placeat nostrum delectus doloremque alias eligendi, quis accusamus sequi obcaecati ut enim ratione quibusdam laudantium accusantium dolores aspernatur error similique?
+      </p>
+  
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum iusto placeat nostrum delectus doloremque alias eligendi, quis accusamus sequi obcaecati ut enim ratione quibusdam laudantium accusantium dolores aspernatur error similique?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum iusto placeat nostrum delectus doloremque alias eligendi, quis accusamus sequi obcaecati ut enim ratione quibusdam laudantium accusantium dolores aspernatur error similique?
+      </p>
+    </div>
+  </section>
+  
+  <section class="fotos" id="fotos">
+    <div class="container">
+      <span class="prev-image"><i class="fa-solid fa-chevron-left"></i></span>
+      <span class="next-image"><i class="fa-solid fa-chevron-right"></i></span>
+
+      <div class="fotos-container">
+        <div class="image-container gs_reveal gs_reveal_fromLeft">
+          <img src="https://cloudfront-eu-central-1.images.arcpublishing.com/prisaradio/ALG7ZJ6G6ZL7BFBCOVHNVVYBGM.jpg" alt="" srcset="">
+          <span class="close-image"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <div class="image-container gs_reveal gs_reveal_fromLeft">
+          <img src="https://universoabiertoblog.files.wordpress.com/2017/03/31.jpg" alt="" srcset="">
+          <span class="close-image"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <div class="image-container gs_reveal gs_reveal_fromRight">
+          <img src="https://i0.wp.com/www.caravanjazz.es/wp-content/uploads/2021/09/maxresdefault.jpg" alt="" srcset="">
+          <span class="close-image"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <div class="image-container gs_reveal gs_reveal_fromLeft">
+          <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/louis-armstrong-1651141819.png" alt="" srcset="">
+          <span class="close-image"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <div class="image-container gs_reveal gs_reveal_fromRight">
+          <img src="https://cloudfront-eu-central-1.images.arcpublishing.com/prisaradio/ALG7ZJ6G6ZL7BFBCOVHNVVYBGM.jpg" alt="" srcset="">
+          <span class="close-image"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <div class="image-container gs_reveal gs_reveal_fromRight">
+          <img src="https://universoabiertoblog.files.wordpress.com/2017/03/31.jpg" alt="" srcset="">
+          <span class="close-image"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer id="contact">
+    <div class="container footer">
+      <div class="footer__social-container gs_reveal gs_reveal_fromLeft">
+        <a target="_blank" href="mailto:jazz@gmail.com"><i class="fa-solid fa-envelope"></i> jazz@gmail.com</a>
+        <a target="_blank" href="https://api.whatsapp.com/send/?phone=5491154906221&lang=es"><i class="fa-brands fa-whatsapp"></i> 0800 123 8199 (jazz)</a>
+        <a target="_blank" href="https://www.instagram.com/milesdavis/"><i class="fa-brands fa-instagram"></i> @jazz_ok</a>
+        <a target="_blank" href="https://www.youtube.com/channel/UC1ZS17c0DlqUjsXZK3K_bgA"><i class="fa-brands fa-youtube"></i> @jazz_yt</a>
+      </div>
+  
+      <div class="gs_reveal gs_reveal_fromRight" style="width: 100%;">
+        <!-- Crear usuario en https://formspree.io/ y reemplazar form id -->
+        <form class="contact-form" action="https://formspree.io/f/{form_id}" method="post">
+          <input name="name" placeholder="Nombre" type="text">
+          <input name="last-name" placeholder="Apellido" type="text">
+          <input name="email" placeholder="Email" type="email">
+          <input name="phone" placeholder="Telefono" type="phone">
+    
+          <textarea name="message" placeholder="message" cols="30" rows="10"></textarea>
+    
+          <input class="contact-form__submit" type="submit" value="Enviar"/>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  <script type="text/javascript" src="./scripts.js"></script>
+</body>
+</html>
